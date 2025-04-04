@@ -36,15 +36,27 @@
 .search{
      position: relative;
 }
-.search img{
-     width: 35px;
-     height: 35px;
-     position: absolute;
-     right: 15px;
-     top: 7px;
-     filter: brightness(0) invert(1);
-}
+.search-icon {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    object-fit: contain; 
+    filter: brightness(0) invert(1); 
+  }
 
+  .cross-icon {
+    width: 20px;    
+    height: 24px;   
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    object-fit: contain; 
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+  }
+  
 .heading input {
     padding: 15px;
     font-size: 1.1rem;
@@ -52,11 +64,11 @@
     background-color: transparent;
     border: 1px solid gray;
     outline: none;
-    color: gray;
+    color: rgba(222, 210, 210, 0.878);
 }
 
 .heading input::placeholder {
-    color: rgba(229, 225, 225, 0.878);
+    color: rgba(222, 210, 210, 0.878);
 }
 
 .cards-container {

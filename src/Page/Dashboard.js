@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import TransactionDetails from '../components/TransactionDetails'
 import '../styles/dashboard.css'
@@ -8,6 +8,11 @@ import Category from '../components/Category'
 import LineChartComponent from '../components/LineChartComponent'
 
 function Dashboard() {
+    const [input,setInput]  = useState('')
+
+    const handleClear = () =>{
+         setInput('')
+    }
   return (
     <>
     <div className='dashboard-container'>
@@ -17,9 +22,10 @@ function Dashboard() {
                 <h1>Overview</h1>
                 
                 <div className='search'>
-                <input placeholder='Search "Waste-in"'/>
-                <img src='https://cdn-icons-png.flaticon.com/128/7168/7168043.png' alt='search'/>
-
+                <input placeholder='Search "Waste-in"' value={input} onChange={(e)=>setInput(e.target.value)}/>
+                {input === '' ?
+                <img src='https://cdn-icons-png.flaticon.com/128/7168/7168043.png' alt='search' className='search-icon'/>:
+                <img src='https://cdn-icons-png.flaticon.com/128/1828/1828778.png' alt='cross' onClick={handleClear} className='cross-icon'/>}
                 </div>
             </div>
             <div className="cards-container">
