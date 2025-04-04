@@ -1,0 +1,45 @@
+.card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.card-content h3{
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(229, 225, 225, 0.299);
+}
+.value{
+     font-size: 1.8rem;
+     color: rgba(229, 225, 225, 0.878);
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .card-content h3 {
+        font-size: 1rem;
+    }
+    .value {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-content h3 {
+        font-size: 0.9rem;
+    }
+    .value {
+        font-size: 1.2rem;
+    }
+}

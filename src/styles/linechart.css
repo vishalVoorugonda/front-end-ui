@@ -1,0 +1,102 @@
+.chart-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgb(22, 22, 69);
+    color: gray;
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .chart-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: gray;
+    padding: 10px;
+  }
+  
+  .chart-dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    filter: brightness(0) invert(2);
+    margin-bottom: 7px;
+  }
+  
+  .chart-days {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: gray;
+  }
+  
+  .chart-dropdown-toggle {
+    font-size: 22px;
+    color: gray;
+  }
+  
+
+  /* Responsive Styles */
+@media (max-width: 1024px) {
+  .chart-container {
+      padding: 10px; 
+      margin: 15px auto;
+  }
+  .chart-title {
+      font-size: 16px; 
+  }
+  .chart-dropdown .chart-days {
+      font-size: 16px; 
+  }
+  .chart-dropdown-toggle {
+      font-size: 18px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+      padding: 10px; 
+  }
+  .chart-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .chart-title {
+      font-size: 14px; 
+  }
+  .chart-dropdown .chart-days {
+      font-size: 14px; 
+  }
+  .chart-dropdown-toggle {
+      font-size: 16px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+      padding: 8px; 
+      margin: 10px auto;
+  }
+  .chart-title {
+      font-size: 12px; 
+  }
+  .chart-dropdown .chart-days {
+      font-size: 12px; 
+  }
+  .chart-dropdown-toggle {
+      font-size: 14px; 
+  }
+}

@@ -1,0 +1,104 @@
+.caterogy-container {
+     width: 300px;
+     height: auto;
+     border-radius: 30px;
+     background-color: rgb(63, 135, 243);
+     color: white;
+     padding: 20px;
+     position: relative;
+     overflow: hidden;
+     perspective: 1000px; 
+ }
+ 
+ .caterogy-container span {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.2rem;
+     padding: 5px;
+ }
+ 
+ .caterogy-container p {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.6rem;
+     padding: 15px;
+     font-weight: 700;
+ }
+ 
+ .caterogy-container p sup {
+     padding: 3px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ 
+
+ .caterogy-container::before, 
+ .caterogy-container::after, 
+ .caterogy-container .stacked-bar {
+     content: "";
+     position: absolute;
+     bottom: 20px; 
+     right: 20px; 
+     background-color: white;
+     border-radius: 5px;
+     opacity: 0.5;
+     transform-origin: bottom; 
+ }
+ 
+
+ .caterogy-container::before {
+     width: 40px; 
+     height: 100px; 
+     z-index: 1;  
+     bottom: 30px; 
+     margin-right: 20px;
+ }
+ 
+ .caterogy-container::after {
+     width: 40px; 
+     height: 80px; 
+     z-index: 2;  
+     bottom: 20px; 
+ }
+ 
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .caterogy-container {
+        width: 250px; 
+        padding: 15px; 
+    }
+    .caterogy-container span {
+        font-size: 1rem; 
+    }
+    .caterogy-container p {
+        font-size: 1.4rem; 
+    }
+    .caterogy-container::before {
+        width: 30px; 
+        height: 80px; 
+    }
+    .caterogy-container::after {
+        width: 30px; 
+        height: 60px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .caterogy-container {
+        width: 200px; 
+        padding: 10px; 
+    }
+    .caterogy-container span {
+        font-size: 0.9rem; 
+    }
+    .caterogy-container p {
+        font-size: 1.2rem; 
+    }
+    .caterogy-container::before {
+        width: 20px; 
+        height: 60px; 
+    }
+    .caterogy-container::after {
+        width: 20px; 
+        height: 40px; 
+    }
+}
+ 

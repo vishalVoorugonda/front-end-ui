@@ -1,0 +1,108 @@
+.user-card {
+    position: relative;
+    background: linear-gradient(to bottom right, #eadab2, #f0779b, #9cdff7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+.user-card span{
+    padding: 10px 0px;
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+.details{
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+     color: #fff;
+     padding: 25px 0px;
+     
+}
+.details p{
+     font-size: 1.3rem;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.details h3{
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 2rem;
+}
+
+
+  
+
+  .user-card::before,
+  .user-card::after {
+    content: "";
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+  
+  .user-card::before {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    right: 10px;
+  }
+  
+  .user-card::after {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    right: 40px;
+  }
+  
+  .details {
+    margin-top: 10px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .user-card {
+        padding: 15px; 
+    }
+
+    .user-card span {
+        font-size: 1.1rem; 
+    }
+
+    .details p {
+        font-size: 1rem; 
+    }
+
+    .details h3 {
+        font-size: 1.5rem; 
+    }
+}
+
+
+.user-card::before,
+.user-card::after {
+    width: 50px; 
+    height: 50px;
+    opacity: 0.3; 
+}
+
+
+@media screen and (max-width: 480px) {
+    .user-card {
+        padding: 10px; 
+    }
+
+    .user-card span {
+        font-size: 1rem; 
+    }
+
+    .details h3 {
+        font-size: 1.3rem; 
+    }
+}

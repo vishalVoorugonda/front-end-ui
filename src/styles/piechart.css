@@ -1,0 +1,185 @@
+.head{
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.head h2{
+   color: grey; 
+}
+.arrows{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.arrows img{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.arrow{
+  filter: brightness(0) invert(1);
+}
+  
+  .region-details {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  
+  }
+  
+  .details-box {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   
+  }
+    
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    margin-right:40px;
+  }
+  
+  .color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .tooltip {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+.piechart{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    color: gray;
+    margin-top: -35px;
+    
+}  
+.custom-tooltip {
+  background-color: rgb(10, 10, 57);
+  border-radius: 10px;
+  padding: 10px;
+  color: gray;
+  text-align: left;
+  font-size: 16px;
+}
+
+.tooltip-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0;
+}
+
+.tooltip-item .location-icon,
+.tooltip-item .user-icon {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1); 
+}
+.recharts-sector {
+  transition: transform 0.3s ease-in-out;
+}
+
+.recharts-sector:hover {
+  transform: scale(1.2);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .arrows {
+    gap: 10px;
+  }
+  .region-details {
+    max-width: 250px; 
+    padding: 8px;
+  }
+  .details-box {
+    padding: 12px;
+  }
+  .legend-item {
+    font-size: 1rem;
+  }
+  .piechart {
+    gap: 15px;
+  }
+  .custom-tooltip {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .region-details {
+    max-width: 100%; 
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .details-box {
+    padding: 10px;
+  }
+  .legend-item {
+    font-size: 0.9rem;
+    margin-right: 20px;
+  }
+  .piechart {
+    gap: 10px;
+  }
+  .custom-tooltip {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .head {
+    padding: 10px;
+  }
+  .arrows {
+    gap: 5px;
+  }
+  .region-details {
+    padding: 5px;
+    max-width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .details-box {
+    padding: 8px;
+  }
+  .legend-item {
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+  .piechart {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .custom-tooltip {
+    font-size: 10px;
+  }
+}
